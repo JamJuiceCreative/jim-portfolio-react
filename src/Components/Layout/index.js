@@ -3,14 +3,16 @@ import Header from '../Header';
 import './index.scss';
 
 const Layout = () => {
-    return (
-    <div className='App'>
-        <Header />
-        <div className='page'>
-            <Outlet />
+  return (
+    <div className="App">
+      <Header />
+      <div className="page">
+        <div className="content-container">
+          <Outlet />
         </div>
+      </div>
     </div>
-    )
-}
+  );
+};
 
-export default Layout
+export default Layout;
