@@ -13,7 +13,7 @@ export default function Skillcard({ title, content, isImage}) {
                 {isImage ? (
                   <img src={content} alt={title} style={{height: "80%", maxHeight: "260px" ,  marginLeft: "30px"}} className="img-fluid"/>
                 ) : (
-                  <p style={{ color: "white" }}>{content}</p>
+                  <div style={{ color: "white" }}>{content}</div>
                 )}
             </Card.Body>
 

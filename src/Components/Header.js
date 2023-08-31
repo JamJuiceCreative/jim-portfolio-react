@@ -50,29 +50,32 @@ const Header = () => {
       <Row>
         <Col xs={12}>
           <div className="header-bottom">
+            <Link to="/">
             <img
               className="jim-illustration"
               src={jimIllustration}
               alt="Jim Lister Illustration"
-            />
+            /></Link>
             {/* Bootstrap Dropdown */}
             <Dropdown show={isMenuOpen} onToggle={toggleMenu}>
               <Dropdown.Toggle
                 variant="secondary"
                 id="dropdown-basic"
                 className="hamburger-menu"
+                
               >
                 {/* Hamburger Icon */}
                 <img
                   src={menuBarIcon}
                   alt="Hamburger Menu"
-                  width="30"
-                  height="30"
+                  width="60"
+                  height="60"
+                  
+                  
                 />
               </Dropdown.Toggle>
 
               <Dropdown.Menu
-               
                 style={{
                   margin: 0,
                   padding: 0,
@@ -80,7 +83,7 @@ const Header = () => {
                   textAlign: 'center',
                   outline: 'none',
                   background: 'none',
-                  border: 'none'
+                  border: 'none',
                 }}
               >
                 {/* Separate buttons with space */}

@@ -13,271 +13,302 @@ code {
 }
 
 p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .copy-margin {
-    margin:  0 40px  0 40px;
-    // margin-left : 250px;
-    // margin-right : 250px;
+  margin: 0 40px 0 40px;
+  // margin-left : 250px;
+  // margin-right : 250px;
 }
 
 .placeholder {
-    background-color: lightblue;
-    height: 100px;
-    width: 100px;
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
 }
 h2 {
-    font-size: 2rem;
-    margin-left: 40px;
-    margin-top: 50px;
+  font-size: 2rem;
+  margin-left: 40px;
+  margin-top: 50px;
 }
 .content-container {
-
-    margin: 0 auto; /* Center the content container horizontally */
-  }
-.skillcard {
-    right: 15px;
-    background-color: #0A629C;
-    max-width: 500px;
-    min-width: 400px;
-    border-radius: 20px 20px 0px 0px;
-    .innercard {
-        text-align: Left;
-        background-color: #15214B;
-        width: 93%;
-        border-radius: 20px 20px 0px 0px;
-        h3 {
-            text-align: center;
-        }
-    }
-    .cardTitle {
-        color: white;
-        font-size: 2REM;
-    }
-
-    
-
-
+  margin: 0 auto; /* Center the content container horizontally */
 }
+.skillcard {
+  margin-left: 40px;
+  right: 15px;
+  background-color: #0a629c;
+  max-width: 500px;
+  min-width: 230px;
+  border-radius: 20px 20px 0px 0px;
+  .innercard {
+    text-align: Left;
+    background-color: #15214b;
+    width: 93%;
+    border-radius: 20px 20px 0px 0px;
+    h3 {
+      text-align: center;
+    }
+  }
+  .cardTitle {
+    color: white;
+    font-size: 2rem;
+  }
 
+  li {
+    font-size: 1.5rem;
+  }
+}
+intro-container {
+  display: flex;
+  align-items: center;
+  min-width: 393px;
+}
 .introduction {
-    min-width: 400px;
-    text-align: left;
+  min-width: 393px;
+  text-align: left;
 }
 
 .custom-button {
-    margin: 10px;
-    width: 100%;
-    background-color: #0A629C;
-    white-space: normal;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #0a629c;
+  white-space: normal;
 }
 
+.koala {
+  max-width: 150px;
+}
+.interests {
+  width: 100%;
+}
+.great-dane,
+.video-games,
+.guitar {
+  width: 150px;
+}
 
+.resume-card {
+  width: 20%;
+  height: 10%;
+}
 /* Phone Screen */
+.footer {
+  display: flex;
+  justify-content: center;
 
-@media only screen and (max-width: 500px){
-
+  background-color: #15214b;
+  color: white;
+  font-size: 100%;
+  .git-hub,
+  .linked-in,
+  .twitter,
+  .face-book,
+  .instagram {
+    width: 100%;
+    max-width: 110px;
+    margin: 15px;
+  }
+  .socials {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
   .header-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-image: url(./Assets/Images/header-background.jpg);
+    background-repeat: no-repeat;
+    text-align: right;
+    font-size: 1rem;
+    height: 340px;
+    min-width: 393px;
+    .nav {
+      display: none;
+    }
+    h1 {
+      margin: auto;
+      padding: 10px 40px 50px 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      overflow-wrap: break-word;
+    }
+    .header-top {
+      display: flex;
+      height: 150px;
+    }
+    .header-bottom {
+      display: flex;
+    }
+    .home-icon {
       display: flex;
       flex-direction: column;
-      margin: auto;
-      width: 100%;
+      margin-bottom: 90px;
+      margin-top: 15px;
+      margin-left: 5px;
+      width: 75px;
+    }
+    .jim-illustration {
+      margin-left: 5px;
+      position: relative;
+      bottom: 50px;
+      left: -50px;
+      width: 80%;
+    }
+    .hamburger-menu {
+      position: relative;
+
+      left: -20px;
+      bottom: -60px;
+      background: none;
+      border: none;
+    }
+
+    .dropdown-menu {
+      position: relative;
+      min-width: 340px;
+
+      top: 335px;
       padding: 10px;
-      background-image: url(./Assets/Images/header-background.jpg);
-      background-repeat: no-repeat;
-      text-align: right;
-      font-size: 1rem;
-      height: 340px;
-      min-width: 393px;
-      .nav{
-          display: none;
+      z-index: 1000;
 
-      }
-      h1 {
-          margin: auto;
-          padding: 10px 40px 50px 50px;
-          color: white;
-          display: flex;
-          align-items: center;
-          overflow-wrap: break-word;
-      }
-      .header-top{
-          display: flex;
-
-      }
-      .header-bottom{
-          display: flex;
-      }
-      .home-icon{
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 90px;
-          margin-top: 15px;
-          margin-left: 5px;
-          width: 75px;   
-      }
-      .jim-illustration{
-          margin-left: 5px;
-          position: relative;
-          bottom: 100px;
-          left:0;
-          width: 70%; 
-          max-width: 400px;
-           
-      }
-      .hamburger-menu {
-          position: relative;
-          max-width: 60px;
-          left: 15px;
-          bottom: 10px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
       }
 
-      .dropdown-menu {
-          position: relative;
-          min-width: 340px;
-          right: 5%;
-          
-          left: 5%;
-          top: 335px;   
-          padding: 10px;
-          z-index: 1000;
-        
-          ul {
-              list-style: none;
-              padding: 0;
-              margin: 0;
-          }
-        
-          li {
-            //   background-color: #15214B;
-            background-color: #0A629C;
-              border: #0A629C 5px solid;
-              border-radius: 10px;
-
-          }
-        
-          li:not(:last-child) {
-            margin-bottom: 5px; /* Add extra margin-bottom for all but the last button */
-          }
-        
-          a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 18px 24px;
-            border-radius: 8px;
-          }
+      li {
+        //   background-color: #15214B;
+        background-color: #0a629c;
+        border: #0a629c 5px solid;
+        border-radius: 10px;
       }
 
+      li:not(:last-child) {
+        margin-bottom: 5px; /* Add extra margin-bottom for all but the last button */
+      }
 
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 18px 24px;
+        border-radius: 8px;
+      }
+    }
   }
-  
 }
 
 /* Larger Devices */
 
 @media only screen and (min-width: 500px){
 
-  .header-container {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      width: 100%;
-      padding: 10px;
-      background-image: url(./Assets/Images/header-background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      text-align: right;
-      font-size: 1.5rem;
-      height: 340px;
-      min-width: 393px;
-      h1 {
-          margin-left: 300px;
-          margin-top: 50px;
-          padding: 10px 0px 50px 50px;
-          color: white;
-          display: flex;
-          align-items: right;
-          overflow-wrap: break-word;
-      }
-      .header-top{
-          display: flex;
-          flex-direction: row;
-          .outside-nav{
-              position: absolute;
-              right: 100px;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-end;
-              justify-content: flex-end;
-              
-          }
-          .nav ul {
-              position: absolute;
-              right: 50px;
-              display: flex;
-              flex-direction: row;
-              list-style: none;
-              padding: 0;
-              margin: 0;
-          }
-          
-          .nav li {
-              
-              margin-right: 5%; /* Add spacing between the navigation items */
-              white-space: nowrap;
-          }
-          
-          .nav a {
-              text-decoration: none;
-              color: #ffffff;
-              padding: 5px;
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        background-image: url(./Assets/Images/header-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: right;
+        font-size: 1.5rem;
+        height: 340px;
+        min-width: 393px;
+        h1 {
+            margin-left: 300px;
+            margin-top: 50px;
+            padding: 10px 0px 50px 50px;
+            color: white;
+            display: flex;
+            align-items: right;
+            overflow-wrap: break-word;
+        }
+        .header-top{
+            display: flex;
+            flex-direction: row;
+            .outside-nav{
+                position: absolute;
+                right: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                
+            }
+            .nav ul {
+                position: absolute;
+                right: 50px;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .nav li {
+                
+                margin-right: 5%; /* Add spacing between the navigation items */
+                white-space: nowrap;
+            }
+            
+            .nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 5px;
+    
+            }
   
-          }
-
-      }
-      .header-bottom{
-          display: flex;
-      }
-      .home-icon{
-        height: 75px;
-          display: flex;
-          flex-direction: column;
-          
-          
-          
-          
-           
-      }
-      .jim-illustration{
-          margin-left: 5px;
-          position: relative;
-          bottom: 50px;
-          left:10px;
-          min-width: 350px;
-          max-width: 20%; 
-          
-           
-      }
-      .hamburger-menu {
-          display: none;
-          position: relative;
-          max-width: 60px;
-          left: 15px;
-          bottom: 10px;
-      }
-
-      .dropdown-menu {
-          display: none;
-      }
-
-
+        }
+        .header-bottom{
+            display: flex;
+        }
+        .home-icon{
+          height: 75px;
+            display: flex;
+            flex-direction: column;
+            
+            
+            
+            
+             
+        }
+        .jim-illustration{
+            margin-left: 5px;
+            position: relative;
+            bottom: 50px;
+            left:10px;
+            min-width: 350px;
+            max-width: 20%; 
+            
+             
+        }
+        .hamburger-menu {
+            display: none;
+            position: relative;
+            max-width: 60px;
+            left: 15px;
+            bottom: 10px;
+        }
+  
+        .dropdown-menu {
+            display: none;
+        }
+  
+  
+    }
+  
+    
+    
   }
-
-  
-  
-}
