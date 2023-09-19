@@ -34,7 +34,7 @@ const Header = () => {
                     <Link to="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/video">Video</Link>
                   </li>
                   <li>
                     <Link to="/contact">Say Hi</Link>
@@ -97,7 +97,7 @@ const Header = () => {
                   <Link to="/gallery">Gallery</Link>
                 </Button>
                 <Button className="custom-button">
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/video">Video</Link>
                 </Button>
                 <Button className="custom-button">
                   <Link to="/contact">Say Hi</Link>

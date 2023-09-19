@@ -6,6 +6,7 @@ import Blog from './Pages/Blog';
 import Gallery from './Pages/Gallery';
 import Projects from './Pages/Projects';
 import './App.scss';
+import Video from './Pages/Video';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} /> 
           <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/video" element={<Video />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/projects" element={<Projects />} />       
         </Route>
