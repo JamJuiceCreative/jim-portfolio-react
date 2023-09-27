@@ -69,7 +69,7 @@ intro-container {
   min-width: 393px;
 }
 .introduction {
-  min-width: 393px;
+  min-width: 350px;
   text-align: left;
 }
 
@@ -110,7 +110,7 @@ intro-container {
 .footer {
   display: flex;
   justify-content: center;
-min-width: 390px;
+min-width: 350px;
   background-color: #15214b;
   color: white;
   font-size: 100%;
@@ -139,7 +139,7 @@ min-width: 390px;
     text-align: right;
     font-size: 1rem;
     height: 340px;
-    min-width: 393px;
+    min-width: 350px;
     .nav {
       display: none;
     }
@@ -237,7 +237,7 @@ min-width: 390px;
         text-align: right;
         font-size: 1.5rem;
         height: 340px;
-        min-width: 393px;
+        min-width: 350px;
         h1 {
             margin-left: 300px;
             margin-top: 50px;

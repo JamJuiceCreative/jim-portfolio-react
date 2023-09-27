@@ -108,7 +108,7 @@ const Home = () => {
               <ul
                 style={{
                   textAlign: 'left',
-                  minWidth: '390px',
+                  minWidth: '340px',
                   fontSize: '1.4rem',
                 }}
               >
