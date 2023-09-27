@@ -127,6 +127,18 @@ min-width: 350px;
     width: 100%;
   }
 }
+.rounded-top {
+  
+  border-top-left-radius: 20px!important; /* Adjust the radius as needed */
+  border-top-right-radius: 20px!important; /* Adjust the radius as needed */
+
+}
+
+// .video-play-button {
+//   position: absolute !important;
+//   bottom: -12px !important; /* Adjust as needed */
+//   right: 28px !important; /* Adjust as needed */
+// }
 @media only screen and (max-width: 500px) {
   .header-container {
     display: flex;

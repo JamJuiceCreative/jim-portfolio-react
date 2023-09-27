@@ -10,7 +10,7 @@ const VideoPlayer = ({ videoId }) => {
 
   const videoOptions = {
     height: '390',
-    width: '640',
+    width: '100%',
   };
 
   return (
