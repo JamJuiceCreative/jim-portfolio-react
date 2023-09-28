@@ -152,6 +152,37 @@ intro-container {
 //   right: 28px !important; /* Adjust as needed */
 // }
 @media only screen and (max-width: 500px) {
+  .projects-card {
+    display: flex;
+    justify-content: center;
+    max-width: 390px;
+  }
+
+  // .wrapi-projects-text{
+  //   margin-left: 30px;
+  //   padding-left: 50px;
+  //   max-width: 330px;
+  //   display: flex;
+  //   justify-content: center;
+  //   padding-right: 100px;
+  //   overflow: scroll;
+  //   p {
+  //     font-size: 1rem;
+  //   }
+
+  // }
+  .projects-text {
+    margin-left: 30px;
+    
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    
+    overflow: scroll;
+    p {
+      font-size: 1.1rem;
+    }
+  }
   .header-container {
     display: flex;
     flex-direction: column;

@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const websiteUrl1 = 'https://superfly-wallpapers-e6d83528d884.herokuapp.com/';
-  const websiteUrl2 = 'https://github.com/JamJuiceCreative/T1A3---Terminal-Application';
+  const websiteUrl2 =
+    'https://github.com/JamJuiceCreative/T1A3---Terminal-Application';
   const websiteUrl3 = 'https://github.com/JamJuiceCreative/JamesLister_T2A2';
   const websiteUrl4 = 'https://translatorpu.netlify.app/';
 
@@ -21,9 +22,13 @@ export default function Projects() {
   return (
     <div>
       <h1 className="mt-5 text-center">Check out my latest projects!</h1>
-      <div className="d-flex justify-content-center mt-3">
+      <div
+        style={{ width: '100%' }}
+        className="d-flex justify-content-center mt-3"
+      >
         <Row className="mt-5">
           <Col
+            
             lg={4}
             className=" projects-card col-md-6 mb-4 d-flex align-items-center"
           >
@@ -52,7 +57,7 @@ export default function Projects() {
               }
             />
           </Col>
-          <Col lg={8} className="col-md-6 mb-4">
+          <Col xs={12} lg={8} className="col-md-6 mb-4">
             <div className="projects-text">
               <p style={{ color: 'black', textAlign: 'left', height: '500px' }}>
                 {' '}
@@ -85,11 +90,10 @@ export default function Projects() {
                 Deployment platform: Heroku <br></br>
                 <strong>
                   <Link to="https://superfly-wallpapers-e6d83528d884.herokuapp.com/">
-                    Deployed Site -
-                    superfly-wallpapers-e6d83528d884.herokuapp.com/<br></br>
+                    Link to Deployed Site<br></br>
                   </Link>
                   <Link to="https://github.com/JamJuiceCreative/super-fly-wallpapers">
-                    Github - github.com/JamJuiceCreative/super-fly-wallpapers
+                    Link to Github
                   </Link>
                 </strong>
               </p>
@@ -97,7 +101,10 @@ export default function Projects() {
           </Col>
         </Row>
       </div>
-      <div className="d-flex justify-content-center mt-3">
+      <div
+        style={{ width: '100%' }}
+        className="d-flex justify-content-center mt-3"
+      >
         <Row className="mt-5">
           <Col
             lg={4}
@@ -147,8 +154,7 @@ export default function Projects() {
                 <br></br>• Development IDE: Visual Studio Code <br></br>
                 <strong>
                   <Link to="https://github.com/JamJuiceCreative/T1A3---Terminal-Application">
-                    Github -
-                    github.com/JamJuiceCreative/T1A3---Terminal-Application
+                    Link to Github
                   </Link>
                 </strong>
               </p>
@@ -156,7 +162,14 @@ export default function Projects() {
           </Col>
         </Row>
       </div>
-      <div className="d-flex justify-content-center mt-3">
+
+
+
+
+      <div
+        style={{ width: '100%' }}
+        className="d-flex justify-content-center mt-3"
+      >
         <Row className="mt-5">
           <Col
             lg={4}
@@ -193,7 +206,7 @@ export default function Projects() {
                 {' '}
                 <strong>
                   <a style={{ fontSize: '2rem', color: '#0a629c' }}>
-                    WRAPI (Wildlife Rescue API)
+                  WRAPI (Wildlife Rescue API)
                   </a>{' '}
                   is an API to give those interested in wildlife conservation a
                   platform to communicate with one another as well as
@@ -202,13 +215,14 @@ export default function Projects() {
                 <br></br>
                 <br></br>
                 <strong>Technology Stack;</strong>
-                <br></br>• Server side programming: python, SQL <br></br>•
-                Back-end framework: flask<br></br>• Database: Postgres<br></br>•
+                <br></br>• Server side programming: python, SQL {' '}
+                <br></br>• Back-end framework: flask<br></br>
+                • Database: Postgres<br></br>•
                 Client applications: Postman, Insomnia, Dbeaver <br></br>•
                 Development IDE: Visual Studio Code<br></br>
                 <strong>
                   <Link to="https://github.com/JamJuiceCreative/JamesLister_T2A2">
-                    Github - github.com/JamJuiceCreative/JamesLister_T2A2
+                    Link to github
                   </Link>
                 </strong>
               </p>
@@ -216,7 +230,14 @@ export default function Projects() {
           </Col>
         </Row>
       </div>
-      <div className="d-flex justify-content-center mt-3">
+      
+
+
+
+      <div
+        style={{ width: '100%' }}
+        className="d-flex justify-content-center mt-3"
+      >
         <Row className="mt-5">
           <Col
             lg={4}
@@ -260,19 +281,17 @@ export default function Projects() {
                   for input and output text.
                 </strong>
                 <br></br>
-                <strong>Technology Stack;</strong><br></br>
-                • Front end technologies: HTML, CSS, Bootstrap <br></br>
-                • Front end framework: React <br></br>
-                • Server side programming: Java Script <br></br>
-                • Development IDE: Visual Studio Code <br></br>
-                • Deployment platform: Netlify <br></br>
+                <strong>Technology Stack;</strong>
+                <br></br>• Front end technologies: HTML, CSS, Bootstrap{' '}
+                <br></br>• Front end framework: React <br></br>• Server side
+                programming: Java Script <br></br>• Development IDE: Visual
+                Studio Code <br></br>• Deployment platform: Netlify <br></br>
                 <strong>
                   <Link to="https://translatorpu.netlify.app/">
-                    Deployed Site -
-                    translatorpu.netlify.app<br></br>
+                    Link to Deployed Site<br></br>
                   </Link>
                   <Link to="https://github.com/JamJuiceCreative/react-translation-app">
-                    Github - github.com/JamJuiceCreative/react-translation-app
+                    Link to Github
                   </Link>
                 </strong>
               </p>
