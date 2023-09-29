@@ -151,6 +151,41 @@ intro-container {
 //   bottom: -12px !important; /* Adjust as needed */
 //   right: 28px !important; /* Adjust as needed */
 // }
+
+.contact-card {
+  margin-left: 40px;
+  right: 15px;
+  background-color: #0a629c;
+  
+  min-width: 230px;
+  border-radius: 20px 20px 0px 0px;
+  .innercard {
+    text-align: Left;
+    background-color: #15214b;
+    width: 93%;
+    border-radius: 20px 20px 0px 0px;
+    h3 {
+      text-align: center;
+    }
+  }
+  .cardTitle {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .card-body {
+    width: 100%;
+    .contact-container {
+      width: 100%;
+    }
+  }
+
+
+  li {
+    font-size: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .projects-card {
     display: flex;
