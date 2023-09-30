@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactForm = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     message: '',
   });
 
@@ -18,20 +21,41 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here
-    console.log(formData);
+    emailjs
+      .sendForm(
+        'service_xkmfr8j',
+        'template_kjhoo8f',
+        form.current,
+        'inuh7mz4pnna9sK9T'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success('Message sent successfully');
+          e.target.reset();
+          setFormData({
+            user_name: '',
+            user_email: '',
+            message: '',
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error('Failed to send message');
+        }
+      );
   };
 
   return (
     <Row>
       <Col className="contact-container">
-        <Form onSubmit={handleSubmit}>
+        <Form ref={form} onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
             <Form.Control
               style={{ maxWidth: '300px' }}
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
@@ -43,7 +67,7 @@ const ContactForm = () => {
             <Form.Control
               style={{ maxWidth: '500px' }}
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
@@ -62,12 +86,13 @@ const ContactForm = () => {
             />
           </Form.Group>
 
-          <div style={{ textAlign: 'right'}}>
-            <Button className = 'mt-4'variant="primary" type="submit">
+          <div style={{ textAlign: 'right' }}>
+            <Button className="mt-4" variant="primary" type="submit">
               Submit
             </Button>
           </div>
         </Form>
+        <Toaster position="bottom-center" reverseOrder={false} />
       </Col>
     </Row>
   );
