@@ -28,7 +28,6 @@ export default function Projects() {
       >
         <Row className="mt-5">
           <Col
-            
             lg={4}
             className=" projects-card col-md-6 mb-4 d-flex align-items-center"
           >
@@ -163,9 +162,6 @@ export default function Projects() {
         </Row>
       </div>
 
-
-
-
       <div
         style={{ width: '100%' }}
         className="d-flex justify-content-center mt-3"
@@ -206,7 +202,7 @@ export default function Projects() {
                 {' '}
                 <strong>
                   <a style={{ fontSize: '2rem', color: '#0a629c' }}>
-                  WRAPI (Wildlife Rescue API)
+                    WRAPI (Wildlife Rescue API)
                   </a>{' '}
                   is an API to give those interested in wildlife conservation a
                   platform to communicate with one another as well as
@@ -215,9 +211,8 @@ export default function Projects() {
                 <br></br>
                 <br></br>
                 <strong>Technology Stack;</strong>
-                <br></br>• Server side programming: python, SQL {' '}
-                <br></br>• Back-end framework: flask<br></br>
-                • Database: Postgres<br></br>•
+                <br></br>• Server side programming: python, SQL <br></br>•
+                Back-end framework: flask<br></br>• Database: Postgres<br></br>•
                 Client applications: Postman, Insomnia, Dbeaver <br></br>•
                 Development IDE: Visual Studio Code<br></br>
                 <strong>
@@ -230,9 +225,6 @@ export default function Projects() {
           </Col>
         </Row>
       </div>
-      
-
-
 
       <div
         style={{ width: '100%' }}
