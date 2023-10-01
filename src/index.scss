@@ -285,7 +285,7 @@ intro-container {
     }
 
     .dropdown-menu {
-      position: relative; /* Change to absolute */
+      position: absolute; /* Change to absolute */
       top: 100%; /* Position below the parent element */
       left: 0; /* Align with the left edge of the parent element */
       min-width: 340px;
