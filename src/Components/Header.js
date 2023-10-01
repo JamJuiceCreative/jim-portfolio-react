@@ -62,7 +62,7 @@ const Header = () => {
               />
             </Link>
             {/* Bootstrap Dropdown */}
-            <Dropdown show={isMenuOpen} onToggle={toggleMenu}>
+            <Dropdown show={isMenuOpen} onToggle={toggleMenu} >
               <Dropdown.Toggle
                 variant="primary"
                 id="dropdown-basic"
