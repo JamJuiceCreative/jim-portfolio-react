@@ -5,7 +5,7 @@ import github from '../Assets/Images/github-icon.svg';
 import linkedin from '../Assets/Images/linked-in-icon.svg';
 import facebook from '../Assets/Images/face-book-icon.svg';
 import twitter from '../Assets/Images/twitter-icon.svg';
-import instagram from '../Assets/Images/github-icon.svg';
+import instagram from '../Assets/Images/instagram-icon.svg';
 
 export default function Footer() {
   return (
@@ -35,7 +35,7 @@ export default function Footer() {
               </Link>
             </Col>
             <Col xs={2}>
-              <Link to ="https://twitter.com/JamJuiceCrea">
+              <Link to="https://twitter.com/JamJuiceCrea">
                 <img className="twitter" src={twitter} alt="twitter" />
               </Link>
             </Col>
