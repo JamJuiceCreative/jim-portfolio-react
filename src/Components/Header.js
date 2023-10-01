@@ -62,7 +62,7 @@ const Header = () => {
               />
             </Link>
             {/* Bootstrap Dropdown */}
-            <Dropdown show={isMenuOpen} onToggle={toggleMenu} >
+            <Dropdown show={isMenuOpen} onToggle={toggleMenu}>
               <Dropdown.Toggle
                 variant="primary"
                 id="dropdown-basic"
@@ -77,6 +77,7 @@ const Header = () => {
                 />
               </Dropdown.Toggle>
 
+              {/* Apply CSS styling to the Dropdown.Menu */}
               <Dropdown.Menu className="custom-dropdown-menu">
                 {/* Separate buttons with space */}
                 <Button className="custom-button" onClick={closeMenu}>

@@ -188,19 +188,30 @@ intro-container {
 }
 
 @media only screen and (max-width: 500px) {
+  .dropdown-menu {
+    position: absolute!important; /* Change to absolute */
+    overflow: hidden;
+    
+    left: 5; /* Align with the left edge of the parent element */
+    min-width: 85vw;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 6px 24px;
+      border-radius: 8px;
+    }
+  }
   .custom-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    transform: translateX(0);
-    margin: auto;
-    width: 90%;
-    max-height: 80vh;
-    overflow-y: auto;
-    text-align: center;
-    outline: none;
     background: none;
     border: none;
+    height: 55vh;
+    overflow: scroll;
+    
   }
 
   .projects-card {
@@ -209,19 +220,6 @@ intro-container {
     max-width: 390px;
   }
 
-  // .wrapi-projects-text{
-  //   margin-left: 30px;
-  //   padding-left: 50px;
-  //   max-width: 330px;
-  //   display: flex;
-  //   justify-content: center;
-  //   padding-right: 100px;
-  //   overflow: scroll;
-  //   p {
-  //     font-size: 1rem;
-  //   }
-
-  // }
   .projects-text {
     margin-left: 30px;
 
@@ -288,23 +286,7 @@ intro-container {
       border: none;
     }
 
-    .dropdown-menu {
-      position: absolute; /* Change to absolute */
-
-      left: 5; /* Align with the left edge of the parent element */
-      min-width: 340px;
-
-      a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 6px 24px;
-        border-radius: 8px;
-      }
-    }
+    
   }
 }
 
