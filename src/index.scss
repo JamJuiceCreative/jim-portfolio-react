@@ -191,7 +191,12 @@ intro-container {
 @media only screen and (max-width: 500px) {
 
   .custom-dropdown-menu {
-    width: 100%;
+
+
+    margin: auto;
+    width: 90%;
+    max-height: 100vh;
+    overflow-y: auto;
     text-align: center;
     outline: none;
     background: none;
@@ -286,8 +291,8 @@ intro-container {
 
     .dropdown-menu {
       position: absolute; /* Change to absolute */
-      top: 100%; /* Position below the parent element */
-      left: 0; /* Align with the left edge of the parent element */
+     
+      left: 5; /* Align with the left edge of the parent element */
       min-width: 340px;
     
       a {
