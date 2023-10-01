@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Dropdown, Button } from 'react-bootstrap'; // Import Bootstrap components
+import { Row, Col, Dropdown, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import menuBarIcon from '../Assets/Images/menu-bar-icon.svg';
 import jimIllustration from '../Assets/Images/jim-lister-illustration.png';
@@ -11,6 +11,10 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the dropdown menu
   };
 
   return (
@@ -51,18 +55,18 @@ const Header = () => {
         <Col xs={12}>
           <div className="header-bottom">
             <Link to="/">
-            <img
-              className="jim-illustration"
-              src={jimIllustration}
-              alt="Jim Lister Illustration"
-            /></Link>
+              <img
+                className="jim-illustration"
+                src={jimIllustration}
+                alt="Jim Lister Illustration"
+              />
+            </Link>
             {/* Bootstrap Dropdown */}
             <Dropdown show={isMenuOpen} onToggle={toggleMenu}>
               <Dropdown.Toggle
                 variant="secondary"
                 id="dropdown-basic"
                 className="hamburger-menu"
-                
               >
                 {/* Hamburger Icon */}
                 <img
@@ -70,8 +74,6 @@ const Header = () => {
                   alt="Hamburger Menu"
                   width="60"
                   height="60"
-                  
-                  
                 />
               </Dropdown.Toggle>
 
@@ -87,19 +89,19 @@ const Header = () => {
                 }}
               >
                 {/* Separate buttons with space */}
-                <Button className="custom-button">
+                <Button className="custom-button" onClick={closeMenu}>
                   <Link to="/">About</Link>
                 </Button>
-                <Button className="custom-button">
+                <Button className="custom-button" onClick={closeMenu}>
                   <Link to="/projects">Projects</Link>
                 </Button>
-                <Button className="custom-button">
+                <Button className="custom-button" onClick={closeMenu}>
                   <Link to="/gallery">Gallery</Link>
                 </Button>
-                <Button className="custom-button">
+                <Button className="custom-button" onClick={closeMenu}>
                   <Link to="/video">Video</Link>
                 </Button>
-                <Button className="custom-button">
+                <Button className="custom-button" onClick={closeMenu}>
                   <Link to="/contact">Say Hi</Link>
                 </Button>
               </Dropdown.Menu>

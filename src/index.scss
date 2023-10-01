@@ -187,6 +187,11 @@ intro-container {
 }
 
 @media only screen and (max-width: 500px) {
+
+  .contact-small-screen {
+    width: 90%;
+
+  }
   .projects-card {
     display: flex;
     justify-content: center;
