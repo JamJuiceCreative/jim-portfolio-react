@@ -156,7 +156,7 @@ intro-container {
   margin-left: 40px;
   right: 15px;
   background-color: #0a629c;
-  
+
   min-width: 230px;
   border-radius: 20px 20px 0px 0px;
   .innercard {
@@ -180,18 +180,12 @@ intro-container {
     }
   }
 
-
   li {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-
-  .contact-small-screen {
-    width: 90%;
-
-  }
   .projects-card {
     display: flex;
     justify-content: center;
@@ -213,11 +207,11 @@ intro-container {
   // }
   .projects-text {
     margin-left: 30px;
-    
+
     max-width: 390px;
     display: flex;
     justify-content: center;
-    
+
     overflow: scroll;
     p {
       font-size: 1.3rem;
@@ -278,29 +272,7 @@ intro-container {
     }
 
     .dropdown-menu {
-      position: relative;
       min-width: 340px;
-
-      top: 335px;
-      padding: 10px;
-      z-index: 1000;
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        //   background-color: #15214B;
-        background-color: #0a629c;
-        border: #0a629c 5px solid;
-        border-radius: 10px;
-      }
-
-      li:not(:last-child) {
-        margin-bottom: 5px; /* Add extra margin-bottom for all but the last button */
-      }
 
       a {
         display: block;
