@@ -13,10 +13,10 @@ import SignTimeLapse from '../Assets/Images/Thumbnails/sign-timelapse.png';
 export default function Video() {
   return (
     <div className="videoThumbnails">
-      <h1>Digital Video</h1>
+      <h1 className="mt-5 text-center">Digital Video</h1>
       <div className="d-flex justify-content-center"></div>
       <div className="d-flex justify-content-center">
-        <Row>
+        <Row className ="mt-5">
           <Col lg={4} md={6} sm={12}className="mb-4">
             <Skillcard
               className="d-flex align-items-center"
